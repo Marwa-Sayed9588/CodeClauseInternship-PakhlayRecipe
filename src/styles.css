@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat+Subrayada:wght@400;700&family=Noto+Color+Emoji&display=swap');
+
+* {
+ 
+  
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+strong{
+	font-weight: bold;
+	color: #144250;
+	margin-top: 100px;
+	font-family: 'Akaya Kanadaka';
+	font-size:35px;
+}
+.header-paragraph{
+	margin-top:90px;
+	font-size: 20px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #0f262c;
+	font-weight: 15px;
+  
+	
+}
+
+.recipe-container {
+ 
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+h2{
+	margin-top:10px;
+	margin-left:10px;
+	font-family: 'Akaya Kanadaka';
+	color: #158eff;
+	font-size: 30px;
+	align-items: center;
+	
+}
+
+
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid transparent;
+  
+}
+
+input {
+  border: 1px solid transparent;
+  padding: 14px;
+  font-size: 20px;
+  color: #012346;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  
+
+}
+input:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-control{
+    
+    max-width: 300px;
+  }
+}
+.form-control {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 600px;
+  
+}
+
+.btn {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+.card {
+  width: 200px;
+  margin: 20px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  
+}
+
+.card-image {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+  
+ 
+}
+
+.category {
+  color: #000008dc;
+  
+}
+
+.instruction {
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.card {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.card:hover {
+	
+		transform: scale(1.05);
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+	
+}
+
+.instruction {
+	background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);}
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'); */
+body{
+  min-height: 100vh;
+}
+ 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 100;
+}
+
+.header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 162, 255, 0.774),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+ .header:hover::before {
+  left: 100%;
+} 
+
+.logo {
+  width: 350px; /* Adjust the width of the logo as needed */
+  max-width: 500px;
+  cursor: pointer;
+  padding: 0 0;
+  margin-right: auto; /* Pushes the logo to the far left */
+}
+
+.navbar a {
+  color: hsla(204, 100%, 50%, 0.993);
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s;
+  cursor:pointer;
+}
+
+.navbar a:hover {
+  color: rgb(117, 91, 19);
+}
+
+
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1.5rem 5%;
+    
+  }
+}
+
+.mobile-menu-icon {
+  display: none;
+  
+
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'); */
+body{
+  min-height: 100vh;
+}
+ 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 100;
+}
+
+.header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 162, 255, 0.774),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+ .header:hover::before {
+  left: 100%;
+} 
+
+.logo {
+  width: 350px; /* Adjust the width of the logo as needed */
+  max-width: 500px;
+  cursor: pointer;
+  padding: 0 0;
+  margin-right: auto; /* Pushes the logo to the far left */
+}
+
+.navbar a {
+  color: hsla(204, 100%, 50%, 0.993);
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s;
+  cursor:pointer;
+}
+
+.navbar a:hover {
+  color: rgb(117, 91, 19);
+}
+
+
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1.5rem 5%;
+    
+  }
+}
+
+.mobile-menu-icon {
+  display: none;
+  
+
+}
+
+
+
+
+@media only screen and (max-width: 768) {
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 50px;
+    color: #0d92eb;
+    
+    
+  }
+  .logo{
+        width: 250px;
+       
+ }
+  
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  .nav-bg {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 100%;
+    height: 295px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #ddcbcbb9;
+    backdrop-filter: blur(7px);
+    z-index: 99;
+    display: none;
+  }
+
+  .nav-bg.active {
+    display: block;
+  }
+  
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'); */
+body{
+  min-height: 100vh;
+}
+ 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 100;
+}
+
+.header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 162, 255, 0.774),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+ .header:hover::before {
+  left: 100%;
+} 
+
+.logo {
+  width: 350px; /* Adjust the width of the logo as needed */
+  max-width: 500px;
+  cursor: pointer;
+  padding: 0 0;
+  margin-right: auto; /* Pushes the logo to the far left */
+}
+
+.navbar a {
+  color: hsla(204, 100%, 50%, 0.993);
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s;
+  cursor:pointer;
+}
+
+.navbar a:hover {
+  color: rgb(117, 91, 19);
+}
+
+
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1.5rem 5%;
+    
+  }
+}
+
+.mobile-menu-icon {
+  display: none;
+  
+
+}
+
+
+
+
+@media only screen and (max-width: 768) {
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 50px;
+    color: #0d92eb;
+    
+    
+  }
+  .logo{
+        width: 250px;
+       
+ }
+  
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  .nav-bg {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    width: 100%;
+    height: 295px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #ddcbcbb9;
+    backdrop-filter: blur(7px);
+    z-index: 99;
+    display: none;
+  }
+
+  .nav-bg.active {
+    display: block;
+  }
+  
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+      padding: 1.5rem 5%;
+    }
+    
+    .mobile-menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 50px;
+      color: #0d92eb;
+    }
+    
+    .logo {
+      width: 250px;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0.5rem 4%;
+      display: none;
+    }
+    
+    .navbar.active {
+      display: block;
+    }
+    
+    .navbar a {
+      display: block;
+      margin: 1.5rem 0;
+    }
+    
+    .nav-bg {
+      position: fixed;
+      top: 79px;
+      left: 0;
+      width: 100%;
+      height: 295px;
+      background: rgba(255, 255, 255, 0.1);
+      border-bottom: 2px solid #ddcbcbb9;
+      backdrop-filter: blur(7px);
+      z-index: 99;
+      display: none;
+    }
+    
+    .nav-bg.active {
+      display: block;
+    }
+  
+    .header::before {
+      left: 100%;
+    }
+  }
+  
+    
+
+
+
