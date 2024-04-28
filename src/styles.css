@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat+Subrayada:wght@400;700&family=Noto+Color+Emoji&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
  
@@ -80,7 +81,7 @@ input:focus {
 @media only screen and (min-width: 768px) {
   .form-control{
     
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 .form-control {
@@ -230,14 +231,6 @@ body{
 
 }
 
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-/* @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'); */
-body{
-  min-height: 100vh;
-}
  
 .header {
   position: fixed;
@@ -323,7 +316,7 @@ body{
     
   }
   .logo{
-        width: 250px;
+        width: 300px;
        
  }
   
